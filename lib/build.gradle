@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.kazurayam"
-version = "0.1.1-SNAPSHOT"
+version = "0.1.1"
 
 ext {
     groovyVersion = '3.0.17'
@@ -54,7 +54,7 @@ mavenPublishing {
     publishToMavenCentral()
     signAllPublications()
     coordinates(project.group,              // com.kazurayam
-                project.rootProject.name,   // testcontexttrace
+                project.rootProject.name,   // ks-context-trace
                 project.version)            // e.g, 0.1.0 or 0.1.0-SNAPSHOT
 
     pom {
@@ -108,13 +108,3 @@ tasks.register("publishGroovydoc", Copy) {
     into "${rootProject.projectDir}/docs/api"
 }
 groovydoc.finalizedBy publishGroovydoc
-
-task groovydocJar(type: Jar) {
-    archiveClassifier = 'javadoc'
-    from groovydoc
-}
-
-task sourcesJar(type: Jar) {
-    archiveClassifier = 'sources'
-    from sourceSets.main.allSource
-}
