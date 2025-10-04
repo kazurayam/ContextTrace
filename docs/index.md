@@ -1,8 +1,8 @@
-# \[Katalon Studio\] It is a good practice to name screenshot files with the Test Case ID
+# It is a good practice to name screenshot files with the Test Case ID
 
 Katalon Studio provides a built-in keyword [`WebUI.takeScreenshot`](https://docs.katalon.com/katalon-studio/keywords/keyword-description-in-katalon-studio/web-ui-keywords/webui-take-screenshot). This feature gives me an itchy problem to me. Let me describe the problem and what I have done.
 
-I have developed a Katalon project <https://github.com/kazurayam/ContextTrace/tree/master/app>. Let’s go through this sample project, which will proposes a untility class `com.kazurayam.ks.ContextTrace`.
+I have developed a Katalon project <https://github.com/kazurayam/ContextTrace/tree/master/app>. Let’s go through this sample project, which will propose a untility class `com.kazurayam.ks.ContextTrace`.
 
 ## Original sample code
 

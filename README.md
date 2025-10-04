@@ -1,9 +1,9 @@
-# [Katalon Studio] ContextTrace
+# [Katalon Studio] ContextTrace --- Test Case script can get its own "TestCaseID"
 
 - date Oct 2025
 - by [kazurayam](https://forum.katalon.com/u/kazurayam/summary)
 
-In Katalon Studio, the `com.kazurayam.ks.ContextTree` class enables a Test Case script to get its own "Test Case ID" and other useful identifications programatically at runtime.
+I have developed a utility class `com.kazurayam.ks.ContextTree` class for Katalon Studio project, which enables a Test Case script to get its own "Test Case ID" and other useful identifications programatically at runtime.
 
 ## Prerequisites
 
