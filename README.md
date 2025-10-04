@@ -3,7 +3,7 @@
 - date Oct 2025
 - by [kazurayam](https://forum.katalon.com/u/kazurayam/summary)
 
-I have developed a utility class `com.kazurayam.ks.ContextTree` class for Katalon Studio project, which enables a Test Case script to get its own "Test Case ID" and other useful identifications programatically at runtime.
+I have developed a utility class `com.kazurayam.ks.ContextTrace` for Katalon Studio project, which enables a Test Case script to get its own "Test Case ID" and other useful identifications programatically at runtime.
 
 ## Prerequisites
 
