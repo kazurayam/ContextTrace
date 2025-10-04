@@ -1,4 +1,4 @@
-# [Katalon Studio] TestContextTrace
+# [Katalon Studio] ContextTrace
 
 - date Oct 2025
 - by [kazurayam](https://forum.katalon.com/u/kazurayam/summary)
