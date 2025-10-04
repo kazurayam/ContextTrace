@@ -1,0 +1,19 @@
+$ tree Reports/20251004_213229
+Reports/20251004_213229
+└── TS - improved
+    └── 20251004_213229
+        ├── 1-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved.png
+        ├── 2-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved,Common_Test_Cases-Login_-_improved.png
+        ├── 20251004_213229.csv
+        ├── 20251004_213229.html
+        ├── 3-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved.png
+        ├── 4-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved.png
+        ├── console0.log
+        ├── execution.properties
+        ├── execution.uuid
+        ├── execution0.log
+        ├── JUnit_Report.xml
+        ├── testCaseBinding
+        └── tsc_id.txt
+
+3 directories, 13 files

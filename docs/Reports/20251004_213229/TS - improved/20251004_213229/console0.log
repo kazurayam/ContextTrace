@@ -1,0 +1,35 @@
+2025-10-04 21:32:35.485 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS - improved
+2025-10-04 21:32:35.614 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = URAYAMA,kazuaki
+2025-10-04 21:32:35.616 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = app
+2025-10-04 21:32:35.617 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = kazuakiurayama - localhost
+2025-10-04 21:32:35.619 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Mac OS X 64bit
+2025-10-04 21:32:35.620 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 127.0.0.1
+2025-10-04 21:32:35.621 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.3.2.0
+2025-10-04 21:32:36.302 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-04 21:32:36.303 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Main Test Cases/TC2_Verify Successful Appointment - improved
+2025-10-04 21:32:36.988 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Story: Book an appointment
+2025-10-04 21:32:36.996 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Given that the user has logged into their account
+2025-10-04 21:32:37.335 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-10-04 21:32:37.344 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['prefs', '{profile.password_manager_leak_detection=false}']
+2025-10-04 21:32:37.344 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['excludeSwitches', '[enable-automation]']
+2025-10-04 21:32:37.414 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+10月 04, 2025 9:32:46 午後 org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+警告: Unable to find an exact match for CDP version 141, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 141
+2025-10-04 21:32:47.605 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = a2dc2977275dfe3efcde751669d5eaea
+2025-10-04 21:32:47.609 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 141.0.7390.54
+2025-10-04 21:32:47.612 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-10-04 21:32:47.613 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-10-04 21:32:47.637 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-10-04 21:32:55.271 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-04 21:32:55.272 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Common Test Cases/Login - improved
+2025-10-04 21:32:55.349 INFO  c.k.katalon.core.main.TestCaseExecutor   - Username = John Doe
+2025-10-04 21:32:55.351 INFO  c.k.katalon.core.main.TestCaseExecutor   - Password = ThisIsNotAPassword
+2025-10-04 21:33:03.138 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Common Test Cases/Login - improved
+2025-10-04 21:33:03.139 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-04 21:33:03.176 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - And Appointment page is displayed
+2025-10-04 21:33:08.675 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - When he fills in valid information in Appointment page
+2025-10-04 21:33:12.632 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Then he should be able to book a new appointment
+2025-10-04 21:33:14.772 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Main Test Cases/TC2_Verify Successful Appointment - improved
+2025-10-04 21:33:14.825 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2025-10-04 21:33:14.826 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS - improved
+2025-10-04 21:33:14.826 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

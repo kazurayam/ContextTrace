@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC2_Verify Successful Appointment - awkward</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>38a45f48-1036-407d-8d5b-7e67a3b2879a</testCaseGuid>
+</TestCaseEntity>

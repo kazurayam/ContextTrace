@@ -1,0 +1,19 @@
+$ tree Reports/20251004_204203
+Reports/20251004_204203
+└── TS
+    └── 20251004_204203
+        ├── 1759578150377.png
+        ├── 1759578157116.png
+        ├── 1759578166156.png
+        ├── 1759578172001.png
+        ├── 20251004_204203.csv
+        ├── 20251004_204203.html
+        ├── console0.log
+        ├── execution.properties
+        ├── execution.uuid
+        ├── execution0.log
+        ├── JUnit_Report.xml
+        ├── testCaseBinding
+        └── tsc_id.txt
+
+3 directories, 13 files

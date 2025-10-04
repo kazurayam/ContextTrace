@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC2_Verify Successful Appointment - improved</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>864121c4-ee63-4050-8424-08c3d9b309db</testCaseGuid>
+</TestCaseEntity>

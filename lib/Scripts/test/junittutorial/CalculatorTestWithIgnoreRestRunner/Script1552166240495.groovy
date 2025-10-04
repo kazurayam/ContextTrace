@@ -1,0 +1,6 @@
+import static com.kazurayam.junit4ks.JUnitCustomKeywords.runWithJUnitRunner
+
+import junittutorial.CalculatorWithIgnoreRestTest
+
+runWithJUnitRunner(CalculatorWithIgnoreRestTest.class)
+

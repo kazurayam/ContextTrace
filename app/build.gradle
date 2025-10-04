@@ -1,0 +1,35 @@
+plugins {
+    id 'groovy'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+configurations {
+    extraJars {
+        exclude group: 'groovy', module:'*'
+    }
+}
+
+dependencies {
+    extraJars 'com.kazurayam:ks-context-trace:0.1.1-SNAPSHOT'
+}
+
+task deleteDrivers(type:Delete) {
+    delete fileTree("Drivers") {
+        include "**/ks-context-trace*"
+    }
+}
+
+task copyDrivers(type:Copy) {
+    from(configurations.extraJars)
+    into "Drivers"
+    include "**/ks-context-trace*"
+}
+
+tasks.register("drivers") {
+    dependsOn deleteDrivers, copyDrivers
+}
+

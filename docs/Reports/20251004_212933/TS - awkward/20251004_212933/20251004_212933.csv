@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS - awkward,Chrome 141.0.7390.54,,,04-10-2025 21:29:39,04-10-2025 21:30:16,37.509s,PASSED
+,,,,,,,
+Start listener action : beforeTestSuite,Chrome 141.0.7390.54,,,04-10-2025 21:29:39,04-10-2025 21:29:39,0.053s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC2_Verify Successful Appointment - awkward,Chrome 141.0.7390.54,,,04-10-2025 21:29:39,04-10-2025 21:30:16,36.722s,PASSED
+Start listener action : beforeTestCase,Chrome 141.0.7390.54,,,04-10-2025 21:29:40,04-10-2025 21:29:40,0.107s,PASSED
+"comment(""Story: Book an appointment"")",Chrome 141.0.7390.54,,,04-10-2025 21:29:40,04-10-2025 21:29:40,0.102s,PASSED
+"comment(""Given that the user has logged into their account"")",Chrome 141.0.7390.54,,,04-10-2025 21:29:40,04-10-2025 21:29:40,0.007s,PASSED
+openBrowser(G_SiteURL),Chrome 141.0.7390.54,,,04-10-2025 21:29:40,04-10-2025 21:29:55,15.226s,PASSED
+"takeScreenshot(""1-Main_Test_Cases-TC_Verify_Successful_Appointment_-_awkward.png"")",Chrome 141.0.7390.54,,,04-10-2025 21:29:55,04-10-2025 21:29:56,1.225s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login - awkward""), [""Username"":""John Doe"", ""Password"":""ThisIsNotAPassword""], STOP_ON_FAILURE)",Chrome 141.0.7390.54,,,04-10-2025 21:29:56,04-10-2025 21:30:05,8.169s,PASSED
+"comment(""And Appointment page is displayed"")",Chrome 141.0.7390.54,,,04-10-2025 21:30:05,04-10-2025 21:30:05,0.005s,PASSED
+if (true),Chrome 141.0.7390.54,,,04-10-2025 21:30:05,04-10-2025 21:30:10,5.614s,PASSED
+"comment(""When he fills in valid information in Appointment page"")",Chrome 141.0.7390.54,,,04-10-2025 21:30:10,04-10-2025 21:30:10,0.013s,PASSED
+"takeScreenshot(""3-Main_Test_Cases-TC_Verify_Successful_Appointment_-_awkward.png"")",Chrome 141.0.7390.54,,,04-10-2025 21:30:10,04-10-2025 21:30:11,0.431s,PASSED
+"click(findTestObject(""Page_CuraAppointment/btn_BookAppointment""))",Chrome 141.0.7390.54,,,04-10-2025 21:30:11,04-10-2025 21:30:12,1.014s,PASSED
+"verifyElementPresent(findTestObject(""Page_AppointmentConfirmation/lbl_Facility""), 30)",Chrome 141.0.7390.54,,,04-10-2025 21:30:12,04-10-2025 21:30:12,0.631s,PASSED
+"verifyTextPresent(""Appointment Confirmation"", false)",Chrome 141.0.7390.54,,,04-10-2025 21:30:12,04-10-2025 21:30:14,1.658s,PASSED
+"comment(""Then he should be able to book a new appointment"")",Chrome 141.0.7390.54,,,04-10-2025 21:30:14,04-10-2025 21:30:14,0.005s,PASSED
+if (true),Chrome 141.0.7390.54,,,04-10-2025 21:30:14,04-10-2025 21:30:16,1.639s,PASSED
+"takeScreenshot(""4-Main_Test_Cases-TC_Verify_Successful_Appointment_-_awkward.png"")",Chrome 141.0.7390.54,,,04-10-2025 21:30:16,04-10-2025 21:30:16,0.360s,PASSED
+closeBrowser(),Chrome 141.0.7390.54,,,04-10-2025 21:30:16,04-10-2025 21:30:16,0.163s,PASSED

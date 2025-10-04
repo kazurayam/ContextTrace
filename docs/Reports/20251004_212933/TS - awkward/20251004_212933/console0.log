@@ -1,0 +1,35 @@
+2025-10-04 21:29:39.051 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS - awkward
+2025-10-04 21:29:39.178 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = URAYAMA,kazuaki
+2025-10-04 21:29:39.181 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = app
+2025-10-04 21:29:39.182 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = kazuakiurayama - localhost
+2025-10-04 21:29:39.184 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Mac OS X 64bit
+2025-10-04 21:29:39.185 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 127.0.0.1
+2025-10-04 21:29:39.186 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.3.2.0
+2025-10-04 21:29:39.889 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-04 21:29:39.890 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Main Test Cases/TC2_Verify Successful Appointment - awkward
+2025-10-04 21:29:40.438 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Story: Book an appointment
+2025-10-04 21:29:40.444 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Given that the user has logged into their account
+2025-10-04 21:29:40.776 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-10-04 21:29:40.784 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['prefs', '{profile.password_manager_leak_detection=false}']
+2025-10-04 21:29:40.785 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['excludeSwitches', '[enable-automation]']
+2025-10-04 21:29:40.846 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+10月 04, 2025 9:29:50 午後 org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+警告: Unable to find an exact match for CDP version 141, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 141
+2025-10-04 21:29:50.875 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 32bbf2fd8357674e0bb5e676f74ef39c
+2025-10-04 21:29:50.879 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 141.0.7390.54
+2025-10-04 21:29:50.882 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-10-04 21:29:50.884 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-10-04 21:29:50.908 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-10-04 21:29:57.119 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-04 21:29:57.119 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Common Test Cases/Login - awkward
+2025-10-04 21:29:57.183 INFO  c.k.katalon.core.main.TestCaseExecutor   - Username = John Doe
+2025-10-04 21:29:57.184 INFO  c.k.katalon.core.main.TestCaseExecutor   - Password = ThisIsNotAPassword
+2025-10-04 21:30:05.039 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Common Test Cases/Login - awkward
+2025-10-04 21:30:05.040 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-04 21:30:05.073 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - And Appointment page is displayed
+2025-10-04 21:30:10.701 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - When he fills in valid information in Appointment page
+2025-10-04 21:30:14.445 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Then he should be able to book a new appointment
+2025-10-04 21:30:16.612 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Main Test Cases/TC2_Verify Successful Appointment - awkward
+2025-10-04 21:30:16.664 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2025-10-04 21:30:16.664 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS - awkward
+2025-10-04 21:30:16.664 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

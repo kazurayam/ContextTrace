@@ -1,0 +1,120 @@
+plugins {
+  id 'groovy'
+  id "com.vanniktech.maven.publish" version "0.34.0"
+}
+
+group = "com.kazurayam"
+version = "0.1.1-SNAPSHOT"
+
+ext {
+    groovyVersion = '3.0.17'
+    GitHubUserName = 'kazurayam'
+    GitHubRepositoryName = 'ContextTrace'
+    ARTIFACT_ID = rootProject.name
+}
+
+configurations {
+    generateDocs
+}
+
+repositories {
+  mavenCentral()
+  mavenLocal()
+}
+
+dependencies {
+    implementation fileTree(dir: "Drivers", include:['*.jar'])
+    implementation "org.codehaus.groovy:groovy-all:${groovyVersion}"
+    implementation fileTree(dir: "/Applications/Katalon Studio.app/Contents/Eclipse/plugins", include: ['*.jar'])
+    implementation fileTree(dir: "/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/lib", include: ['*.jar'])
+    generateDocs "org.codehaus.groovy:groovy-all:${groovyVersion}"
+}
+
+sourceSets {
+    main {
+        groovy {
+            srcDirs = ['Keywords', 'Libs']
+            excludes = ['**/CustomKeywords.groovy',
+                "**/Temp*.groovy",
+                "internal/**",
+                "junittutorial/**",
+                "katalon-plugin.json"
+                ]
+        }
+    }
+    test {
+         groovy {
+            srcDirs = ['Include/scripts/groovy']
+            excludes = ['junittutorial/**', '**/Temp*.groovy']
+         }
+    }
+}
+
+mavenPublishing {
+    publishToMavenCentral()
+    signAllPublications()
+    coordinates(project.group,              // com.kazurayam
+                project.rootProject.name,   // testcontexttrace
+                project.version)            // e.g, 0.1.0 or 0.1.0-SNAPSHOT
+
+    pom {
+        name.set(project.rootProject.name)
+        description.set('A Katalon Studio plugin that enables a Test Case to easily get its TestCaseId and TestSuiteId runtime')
+        inceptionYear.set('2025')
+        url.set("https://${GitHubUserName}.github.io/${GitHubRepositoryName}/")
+        licenses {
+            license {
+                name.set('The Apache License, Version 2.0')
+                url.set('https://www.apache.org.licenses/LICENSE-2.0.txt')
+                distribution.set('http://www.apache.org/licenses/LICENSE-2.0.txt')
+            }
+        }
+        developers {
+            developer {
+                id.set("${GitHubUserName}")
+                name.set('URAYAMA,kazuaki')
+                url.set("https://github.com/${GitHubUserName}/")
+            }
+        }
+        scm {
+            connection = "scm:git:https://github.com/${GitHubUserName}/${GitHubRepositoryName}.git"
+            developerConnection = "scm:git:git@github.com:${GitHubUserName}/${GitHubRepositoryName}.git"
+            url = "https://github.com/${GitHubUserName}/${GitHubRepositoryName}"
+        }
+    }
+}
+/*
+ * ~/.gradle/gradle.properites should contain the following properites:
+mavenCentralUsername=your-username
+mavenCentralPassword=your-password
+signing.keyId=12345678
+signing.password=some_password
+signing.secretKeyRingFile=/Users/yourusername/.gnupg/secring.gpg
+ */
+
+task groovydoc(type: Groovydoc, overwrite:true) {
+    docTitle = ARTIFACT_ID  + ' ' + project.version + " API"
+    group = 'com.kazurayam'
+    source = sourceSets.main.groovy
+    classpath = configurations.generateDocs
+    groovyClasspath = configurations.generateDocs
+    include 'com/kazurayam/ks/*'
+    exclude '**/*Test.groovy'
+}
+tasks.register("publishGroovydoc", Copy) {
+    group = 'Custom'
+    description = "copy the Groovydoc files into the rootProject/docs directory to make it publicly accessible"
+    from 'build/docs/groovydoc'
+    into "${rootProject.projectDir}/docs/api"
+}
+groovydoc.finalizedBy publishGroovydoc
+
+task groovydocJar(type: Jar) {
+    archiveClassifier = 'javadoc'
+    from groovydoc
+}
+
+task sourcesJar(type: Jar) {
+    archiveClassifier = 'sources'
+    from sourceSets.main.allSource
+}

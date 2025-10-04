@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login - improved</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e4568310-c0cc-4a55-962c-ee070568e7fb</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>94781f36-7f20-4749-a579-9931fc7e4b2a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>86ba8c72-56aa-4f69-8d9f-ce2911cd9716</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'foo'</defaultValue>
+      <description></description>
+      <id>94781f36-7f20-4749-a579-9931fc7e4b2a</id>
+      <masked>false</masked>
+      <name>Username</name>
+   </variable>
+   <variable>
+      <defaultValue>'bar'</defaultValue>
+      <description></description>
+      <id>86ba8c72-56aa-4f69-8d9f-ce2911cd9716</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+</TestCaseEntity>

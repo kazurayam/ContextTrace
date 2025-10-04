@@ -1,0 +1,55 @@
+2025-10-04 21:34:37.238 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS - modularized
+2025-10-04 21:34:37.369 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = URAYAMA,kazuaki
+2025-10-04 21:34:37.371 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = app
+2025-10-04 21:34:37.372 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = kazuakiurayama - localhost
+2025-10-04 21:34:37.373 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Mac OS X 64bit
+2025-10-04 21:34:37.374 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 127.0.0.1
+2025-10-04 21:34:37.375 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.3.2.0
+2025-10-04 21:34:37.992 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-04 21:34:37.993 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Main Test Cases/TC2_Verify Successful Appointment - modularized
+
+TestContextTrace.getTestSuiteId():                Test Suites/TS - modularized
+TestContextTrace.escapedTestSuiteId():            TS_-_modularized
+TestContextTrace.getCurrentTestCaseId():          Test Cases/Main Test Cases/TC2_Verify Successful Appointment - modularized
+TestContextTrace.getEscapedCurrentTestCaseId():   Main_Test_Cases-TC2_Verify_Successful_Appointment_-_modularized
+TestContextTrace.getTestCaseIdStack():            [Test Cases/Main Test Cases/TC2_Verify Successful Appointment - modularized]
+TestContextTrace.escapedTestCaseIdChain():        Main_Test_Cases-TC2_Verify_Successful_Appointment_-_modularized
+
+2025-10-04 21:34:38.775 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - com.kazurayam.ks.ContextTrace.status is PASSED
+2025-10-04 21:34:38.890 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Story: Book an appointment
+2025-10-04 21:34:38.901 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Given that the user has logged into their account
+2025-10-04 21:34:39.275 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-10-04 21:34:39.283 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['prefs', '{profile.password_manager_leak_detection=false}']
+2025-10-04 21:34:39.284 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['excludeSwitches', '[enable-automation]']
+2025-10-04 21:34:39.339 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+10月 04, 2025 9:34:48 午後 org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+警告: Unable to find an exact match for CDP version 141, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 141
+2025-10-04 21:34:49.638 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = bc00cb4998bfd6ce3f294ed212dec803
+2025-10-04 21:34:49.641 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 141.0.7390.54
+2025-10-04 21:34:49.643 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-10-04 21:34:49.644 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-10-04 21:34:49.663 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-10-04 21:34:54.620 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - my.Screenshooter.initialize is PASSED
+2025-10-04 21:34:55.848 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - my.Screenshooter.takeScreenshot is PASSED
+2025-10-04 21:34:56.023 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-04 21:34:56.024 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Common Test Cases/Login - modularized
+
+TestContextTrace.getTestSuiteId():                Test Suites/TS - modularized
+TestContextTrace.escapedTestSuiteId():            TS_-_modularized
+TestContextTrace.getCurrentTestCaseId():          Test Cases/Common Test Cases/Login - modularized
+TestContextTrace.getEscapedCurrentTestCaseId():   Common_Test_Cases-Login_-_modularized
+TestContextTrace.getTestCaseIdStack():            [Test Cases/Main Test Cases/TC2_Verify Successful Appointment - modularized, Test Cases/Common Test Cases/Login - modularized]
+TestContextTrace.escapedTestCaseIdChain():        Main_Test_Cases-TC2_Verify_Successful_Appointment_-_modularized,Common_Test_Cases-Login_-_modularized
+
+2025-10-04 21:35:01.441 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - my.Screenshooter.takeScreenshot is PASSED
+2025-10-04 21:35:03.823 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Common Test Cases/Login - modularized
+2025-10-04 21:35:03.824 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-04 21:35:03.849 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - And Appointment page is displayed
+2025-10-04 21:35:09.257 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - When he fills in valid information in Appointment page
+2025-10-04 21:35:09.676 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - my.Screenshooter.takeScreenshot is PASSED
+2025-10-04 21:35:13.154 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Then he should be able to book a new appointment
+2025-10-04 21:35:15.305 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - my.Screenshooter.takeScreenshot is PASSED
+2025-10-04 21:35:15.475 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Main Test Cases/TC2_Verify Successful Appointment - modularized
+2025-10-04 21:35:15.528 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2025-10-04 21:35:15.528 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS - modularized
+2025-10-04 21:35:15.528 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

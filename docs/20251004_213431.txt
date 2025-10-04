@@ -1,0 +1,20 @@
+$ tree Reports/20251004_213431
+Reports/20251004_213431
+└── TS - modularized
+    └── 20251004_213431
+        ├── 20251004_213431.csv
+        ├── 20251004_213431.html
+        ├── console0.log
+        ├── execution.properties
+        ├── execution.uuid
+        ├── execution0.log
+        ├── JUnit_Report.xml
+        ├── snapshots
+        │   ├── 1-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_modularized.png
+        │   ├── 2-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_modularized,Common_Test_Cases-Login_-_modularized.png
+        │   ├── 3-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_modularized.png
+        │   └── 4-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_modularized.png
+        ├── testCaseBinding
+        └── tsc_id.txt
+
+4 directories, 13 files

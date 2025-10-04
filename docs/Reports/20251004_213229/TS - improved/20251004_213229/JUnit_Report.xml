@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS - improved" time="39.185" tests="1" failures="0" errors="0">
+   <testsuite name="TS - improved" tests="1" failures="0" errors="0" time="39.185" skipped="0" timestamp="2025-10-04T12:32:35.588Z" hostname="kazuakiurayama - localhost" id="Test Suites/TS - improved">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/kazuakiurayama/katalon-workspace/ContextTrace/app/Reports/20251004_213229/TS - improved/20251004_213229"/>
+         <property name="logFiles" value="/Users/kazuakiurayama/katalon-workspace/ContextTrace/app/Reports/20251004_213229/TS - improved/20251004_213229/execution0.log, /Users/kazuakiurayama/katalon-workspace/ContextTrace/app/Reports/20251004_213229/TS - improved/20251004_213229/console0.log"/>
+         <property name="attachments" value="/Users/kazuakiurayama/katalon-workspace/ContextTrace/app/Reports/20251004_213229/TS - improved/20251004_213229/1-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved.png, /Users/kazuakiurayama/katalon-workspace/ContextTrace/app/Reports/20251004_213229/TS - improved/20251004_213229/2-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved,Common_Test_Cases-Login_-_improved.png, /Users/kazuakiurayama/katalon-workspace/ContextTrace/app/Reports/20251004_213229/TS - improved/20251004_213229/3-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved.png, /Users/kazuakiurayama/katalon-workspace/ContextTrace/app/Reports/20251004_213229/TS - improved/20251004_213229/4-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved.png"/>
+         <property name="hostName" value="kazuakiurayama - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="10.3.2.0"/>
+         <property name="browser" value="Chrome 141.0.7390.54"/>
+         <property name="userFullName" value="URAYAMA,kazuaki"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="a2dc2977275dfe3efcde751669d5eaea"/>
+         <property name="projectName" value="app"/>
+         <property name="seleniumVersion" value="4.28.1"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Main Test Cases/TC2_Verify Successful Appointment - improved" time="38.47" classname="Test Cases/Main Test Cases/TC2_Verify Successful Appointment - improved" status="PASSED">
+         <system-out><![CDATA[04-10-2025T21:32:36 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC2_Verify Successful Appointment - improved: Test Cases/Main Test Cases/TC2_Verify Successful Appointment - improved
+
+04-10-2025T21:32:36 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: null
+
+04-10-2025T21:32:36 - [TEST_STEP][PASSED] - ContextTrace.setTestCaseContext(context): null
+
+04-10-2025T21:32:36 - [TEST_STEP][PASSED] - comment("Story: Book an appointment"): Story: Book an appointment
+
+04-10-2025T21:32:36 - [MESSAGE][INFO] - Story: Book an appointment
+
+04-10-2025T21:32:36 - [TEST_STEP][PASSED] - comment("Given that the user has logged into their account"): Given that the user has logged into their account
+
+04-10-2025T21:32:36 - [MESSAGE][INFO] - Given that the user has logged into their account
+
+04-10-2025T21:32:37 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+04-10-2025T21:32:37 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+04-10-2025T21:32:37 - [MESSAGE][INFO] - User set preference: ['prefs', '{profile.password_manager_leak_detection=false}']
+
+04-10-2025T21:32:37 - [MESSAGE][INFO] - User set preference: ['excludeSwitches', '[enable-automation]']
+
+04-10-2025T21:32:37 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+04-10-2025T21:32:53 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+04-10-2025T21:32:53 - [TEST_STEP][PASSED] - takeScreenshot("1-" + ContextTrace.escapedTestCaseIdChain() + ".png"): Taking screenshot successfully
+
+04-10-2025T21:32:55 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/kazuakiurayama/katalon-workspace/ContextTrace/app/Reports/20251004_213229/TS - improved/20251004_213229/1-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved.png]]
+
+04-10-2025T21:32:55 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Common Test Cases/Login - improved"), ["Username":"John Doe", "Password":"ThisIsNotAPassword"], STOP_ON_FAILURE): Call Test Case 'Test Cases/Common Test Cases/Login - improved' successfully
+
+04-10-2025T21:32:55 - [TEST_CASE][PASSED] - Test Cases/Common Test Cases/Login - improved: Test Cases/Common Test Cases/Login - improved
+
+04-10-2025T21:32:55 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+04-10-2025T21:32:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+04-10-2025T21:32:57 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), Username): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+04-10-2025T21:32:59 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+04-10-2025T21:32:59 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), Password): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+04-10-2025T21:33:00 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+04-10-2025T21:33:00 - [TEST_STEP][PASSED] - takeScreenshot("2-" + ContextTrace.escapedTestCaseIdChain() + ".png"): Taking screenshot successfully
+
+04-10-2025T21:33:00 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/kazuakiurayama/katalon-workspace/ContextTrace/app/Reports/20251004_213229/TS - improved/20251004_213229/2-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved,Common_Test_Cases-Login_-_improved.png]]
+
+04-10-2025T21:33:00 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+04-10-2025T21:33:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+04-10-2025T21:33:02 - [TEST_STEP][PASSED] - landingPage = verifyElementPresent(findTestObject("Page_CuraAppointment/div_Appointment"), G_Timeout): Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+04-10-2025T21:33:03 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+04-10-2025T21:33:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common Test Cases/Login - improved' successfully
+
+04-10-2025T21:33:03 - [TEST_STEP][PASSED] - comment("And Appointment page is displayed"): And Appointment page is displayed
+
+04-10-2025T21:33:03 - [MESSAGE][INFO] - And Appointment page is displayed
+
+04-10-2025T21:33:03 - [TEST_STEP][PASSED] - if (true): Text 'Please make appointment as soon as possible.' is set on object 'Object Repository/Page_CuraAppointment/txt_Comment'
+
+04-10-2025T21:33:03 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("Page_CuraAppointment/lst_Facility"), "Hongkong CURA Healthcare Center", false): All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/lst_Facility' 
+
+04-10-2025T21:33:04 - [MESSAGE][PASSED] - All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/lst_Facility' 
+
+04-10-2025T21:33:04 - [TEST_STEP][PASSED] - check(findTestObject("Page_CuraAppointment/chk_Medicaid")): Object 'Object Repository/Page_CuraAppointment/chk_Medicaid' is checked
+
+04-10-2025T21:33:04 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/chk_Medicaid' is checked
+
+04-10-2025T21:33:04 - [TEST_STEP][PASSED] - check(findTestObject("Page_CuraAppointment/chk_Readmission")): Object 'Object Repository/Page_CuraAppointment/chk_Readmission' is checked
+
+04-10-2025T21:33:05 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/chk_Readmission' is checked
+
+04-10-2025T21:33:05 - [TEST_STEP][PASSED] - setText(findTestObject("Page_CuraAppointment/txt_VisitDate"), "27/12/2016"): Text '27/12/2016' is set on object 'Object Repository/Page_CuraAppointment/txt_VisitDate'
+
+04-10-2025T21:33:07 - [MESSAGE][PASSED] - Text '27/12/2016' is set on object 'Object Repository/Page_CuraAppointment/txt_VisitDate'
+
+04-10-2025T21:33:07 - [TEST_STEP][PASSED] - setText(findTestObject("Page_CuraAppointment/txt_Comment"), "Please make appointment as soon as possible."): Text 'Please make appointment as soon as possible.' is set on object 'Object Repository/Page_CuraAppointment/txt_Comment'
+
+04-10-2025T21:33:08 - [MESSAGE][PASSED] - Text 'Please make appointment as soon as possible.' is set on object 'Object Repository/Page_CuraAppointment/txt_Comment'
+
+04-10-2025T21:33:08 - [TEST_STEP][PASSED] - comment("When he fills in valid information in Appointment page"): When he fills in valid information in Appointment page
+
+04-10-2025T21:33:08 - [MESSAGE][INFO] - When he fills in valid information in Appointment page
+
+04-10-2025T21:33:08 - [TEST_STEP][PASSED] - takeScreenshot("3-" + ContextTrace.escapedTestCaseIdChain() + ".png"): Taking screenshot successfully
+
+04-10-2025T21:33:09 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/kazuakiurayama/katalon-workspace/ContextTrace/app/Reports/20251004_213229/TS - improved/20251004_213229/3-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved.png]]
+
+04-10-2025T21:33:09 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraAppointment/btn_BookAppointment")): Object: 'Object Repository/Page_CuraAppointment/btn_BookAppointment' is clicked on
+
+04-10-2025T21:33:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraAppointment/btn_BookAppointment' is clicked on
+
+04-10-2025T21:33:10 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_AppointmentConfirmation/lbl_Facility"), 30): Object 'Object Repository/Page_AppointmentConfirmation/lbl_Facility' is present
+
+04-10-2025T21:33:11 - [MESSAGE][PASSED] - Object 'Object Repository/Page_AppointmentConfirmation/lbl_Facility' is present
+
+04-10-2025T21:33:11 - [TEST_STEP][PASSED] - verifyTextPresent("Appointment Confirmation", false): Text 'Appointment Confirmation' is present on page 
+
+04-10-2025T21:33:12 - [MESSAGE][PASSED] - Text 'Appointment Confirmation' is present on page 
+
+04-10-2025T21:33:12 - [TEST_STEP][PASSED] - comment("Then he should be able to book a new appointment"): Then he should be able to book a new appointment
+
+04-10-2025T21:33:12 - [MESSAGE][INFO] - Then he should be able to book a new appointment
+
+04-10-2025T21:33:12 - [TEST_STEP][PASSED] - if (true): Actual text 'Please make appointment as soon as possible.' and expected text 'Please make appointment as soon as possible.' are matched 
+
+04-10-2025T21:33:12 - [TEST_STEP][PASSED] - verifyMatch("Hongkong CURA Healthcare Center", getText(findTestObject("Page_AppointmentConfirmation/lbl_Facility")), false): Actual text 'Hongkong CURA Healthcare Center' and expected text 'Hongkong CURA Healthcare Center' are matched 
+
+04-10-2025T21:33:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_Facility' is: 'Hongkong CURA Healthcare Center'
+
+04-10-2025T21:33:13 - [MESSAGE][PASSED] - Actual text 'Hongkong CURA Healthcare Center' and expected text 'Hongkong CURA Healthcare Center' are matched 
+
+04-10-2025T21:33:13 - [TEST_STEP][PASSED] - verifyMatch("Yes", getText(findTestObject("Page_AppointmentConfirmation/lbl_HospitalReadmission")), false): Actual text 'Yes' and expected text 'Yes' are matched 
+
+04-10-2025T21:33:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_HospitalReadmission' is: 'Yes'
+
+04-10-2025T21:33:13 - [MESSAGE][PASSED] - Actual text 'Yes' and expected text 'Yes' are matched 
+
+04-10-2025T21:33:13 - [TEST_STEP][PASSED] - verifyMatch("Medicaid", getText(findTestObject("Page_AppointmentConfirmation/lbl_Program")), false): Actual text 'Medicaid' and expected text 'Medicaid' are matched 
+
+04-10-2025T21:33:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_Program' is: 'Medicaid'
+
+04-10-2025T21:33:13 - [MESSAGE][PASSED] - Actual text 'Medicaid' and expected text 'Medicaid' are matched 
+
+04-10-2025T21:33:13 - [TEST_STEP][PASSED] - verifyMatch("27/12/2016", getText(findTestObject("Page_AppointmentConfirmation/lbl_VisitDate")), false): Actual text '27/12/2016' and expected text '27/12/2016' are matched 
+
+04-10-2025T21:33:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_VisitDate' is: '27/12/2016'
+
+04-10-2025T21:33:13 - [MESSAGE][PASSED] - Actual text '27/12/2016' and expected text '27/12/2016' are matched 
+
+04-10-2025T21:33:13 - [TEST_STEP][PASSED] - verifyMatch("Please make appointment as soon as possible.", getText(findTestObject("Page_AppointmentConfirmation/lbl_Comment")), false): Actual text 'Please make appointment as soon as possible.' and expected text 'Please make appointment as soon as possible.' are matched 
+
+04-10-2025T21:33:14 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_Comment' is: 'Please make appointment as soon as possible.'
+
+04-10-2025T21:33:14 - [MESSAGE][PASSED] - Actual text 'Please make appointment as soon as possible.' and expected text 'Please make appointment as soon as possible.' are matched 
+
+04-10-2025T21:33:14 - [TEST_STEP][PASSED] - takeScreenshot("4-" + ContextTrace.escapedTestCaseIdChain() + ".png"): Taking screenshot successfully
+
+04-10-2025T21:33:14 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/kazuakiurayama/katalon-workspace/ContextTrace/app/Reports/20251004_213229/TS - improved/20251004_213229/4-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved.png]]
+
+04-10-2025T21:33:14 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+04-10-2025T21:33:14 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[04-10-2025T21:32:35 - [TEST_STEP][PASSED] - Start listener action : beforeTestSuite: null
+
+04-10-2025T21:32:35 - [TEST_STEP][PASSED] - ContextTrace.setTestSuiteContext(context): null
+
+04-10-2025T21:32:35 - [TEST_SUITE][PASSED] - TS - improved: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

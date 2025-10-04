@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login - awkward</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4d65d46f-b7e0-420f-9ea1-e11d5f86f79e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>144443a5-440c-4a31-a784-fb4fce9c1277</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>83cafed0-095c-4490-94c1-d2279acafaf3</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'foo'</defaultValue>
+      <description></description>
+      <id>144443a5-440c-4a31-a784-fb4fce9c1277</id>
+      <masked>false</masked>
+      <name>Username</name>
+   </variable>
+   <variable>
+      <defaultValue>'bar'</defaultValue>
+      <description></description>
+      <id>83cafed0-095c-4490-94c1-d2279acafaf3</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,19 @@
+$ tree Reports/20251004_212933
+Reports/20251004_212933
+└── TS - awkward
+    └── 20251004_212933
+        ├── 1-Main_Test_Cases-TC_Verify_Successful_Appointment_-_awkward.png
+        ├── 2-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved,Common_Test_Cases-Login_-_awkward.png
+        ├── 20251004_212933.csv
+        ├── 20251004_212933.html
+        ├── 3-Main_Test_Cases-TC_Verify_Successful_Appointment_-_awkward.png
+        ├── 4-Main_Test_Cases-TC_Verify_Successful_Appointment_-_awkward.png
+        ├── console0.log
+        ├── execution.properties
+        ├── execution.uuid
+        ├── execution0.log
+        ├── JUnit_Report.xml
+        ├── testCaseBinding
+        └── tsc_id.txt
+
+3 directories, 13 files

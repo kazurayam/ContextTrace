@@ -1,0 +1,123 @@
+:URL_REPOSITORY: https://github.com/kazurayam/ContextTrace
+:URL_PAGES: https://kazurayam.github.io/ContextTrace
+
+== [Katalon Studio] It is a good practice to name screenshot files with the Test Case ID
+
+Katalon Studio provides a built-in keyword link:https://docs.katalon.com/katalon-studio/keywords/keyword-description-in-katalon-studio/web-ui-keywords/webui-take-screenshot[`WebUI.takeScreenshot`]. This feature gives me an itchy problem to me. Let me describe the problem and what I have done.
+
+I have developed a Katalon project link:{URL_REPOSITORY}/tree/master/app[]. Let's go through this sample project, which will proposes a untility class `com.kazurayam.ks.ContextTrace`.
+
+=== Original sample code
+
+As the document tells, the `WebUI.takeScreenshot` keyword takes an argument `fileName`, which is optional. What value will the `fileName` take as default? So let me check it hands-on. I created a testcase script
+
+- link:{URL_REPOSITORY}/blob/develop/app/Scripts/Main%20Test%20Cases/TC2_Verify%20Successful%20Appointment/Script1759213297502.groovy[app/Test Cases/Main Test Cases/TC2_Verify Successful Appointment]
+
+Also I made a test suite
+
+- link:{URL_REPOSITORY}/blob/master/app/Test%20Suites/TS.ts[app/Test Suites/TS]
+
+The test suite calls the aforementioned testcase. When I ran the test suite, I got the result in the `Reports` folder.
+
+[source]
+----
+include::20251004_204203.txt[]
+----
+
+As you see, the `WebUI.takeScreenshot()` generated a PNG file named with 13 digits appended with postfix `.png`, like `1759578150377.png`.
+
+[quote]
+____
+What is `1759578150377`? --- It is the value of `new java.util.Date().getTime()`; the link:https://www.unixtimestamp.com/[Current Epoch Unix Timestamp].
+____
+
+This file name tells me nothing what the PNG image presents. Therefore I can not re-use the PNG files named in this format. These PNG files are just useless for me.
+
+=== Awkward solution
+
+How can I give screenshot files better names? --- It's easy. As the doc link:https://docs.katalon.com/katalon-studio/keywords/keyword-description-in-katalon-studio/web-ui-keywords/webui-take-screenshot[`WebUI.takeScreenshot`] tells, I can specify `fileName` as the 1st argument.
+
+It is a good idea to name the screenshot files with the TestCaseId. I can do it easily. See the test cases source code:
+
+- link:{URL_REPOSITORY}/blob/master/app/Scripts/Main%20Test%20Cases/TC2_Verify%20Successful%20Appointment%20-%20awkward/Script1759213297502.groovy[app/Test Cases/Main Test Cases/TC2_Verify Successful Appointment - awkward]
+
+[source,groovy]
+----
+...
+include::../app/Scripts/Main Test Cases/TC2_Verify Successful Appointment - awkward/Script1759213297502.groovy[lines=13..15]
+...
+----
+
+When I ran the link:https://github.com/kazurayam/TestContextTrace/blob/master/app/Test%20Suites/TS%20-%20awkward.ts[app/Test Suites/TS - awkward], I got the following output in the Console:
+
+[source]
+----
+include::20251004_212933.txt[]
+----
+
+The PNG files are named better than the original code --- the sequence number 1,2,3,4 followed by Test Case ID. Even in the case where 2 or more Test Cases are chained by `WebUI.callTestCase()` keyword, the file name contains the full information of the chained test cases.
+
+But I hate the test case source code. It is a terrible idea to hard-code a string like `"2-Main_Test_Cases-TC2_Verify_Successful_Appointment_-_improved,Common_Test_Cases-Login_-_awkward.png"` in the script. Anyone can imagin, such string literals will make the maintenance job a nightmare.
+
+=== Improved solution
+
+The `com.kazurayam.ks.ContextTrace` class can improve my code. See the link:{URL_REPOSITORY}[README] how to introduce it. See the test cases source code:
+
+- link:{URL_REPOSITORY}/blob/develop/app/Scripts/Main%20Test%20Cases/TC2_Verify%20Successful%20Appointment%20-%20improved/Script1759213297502.groovy[app/Test Cases/Main Test Cases/TC2_Verify Successful Appointment - improved]
+
+[source,groovy]
+----
+....
+include::../app/Scripts/Main Test Cases/TC2_Verify Successful Appointment - improved/Script1759213297502.groovy[lines=14..16]
+....
+----
+
+As you see, **the test case source code now contains no lenthy string literal, which is replaced with a call to `ContextTrace.escapedTestCaseIdChain()`**. This style makes the code much more maintainable.
+
+When I ran the link:https://github.com/kazurayam/TestContextTrace/blob/master/app/Test%20Suites/TS%20-%20improved.ts[app/Test Suites/TS - improved], I got the following output in the Console:
+
+[source]
+----
+include::20251004_213229.txt[]
+----
+
+This output is just similar to the "awkward solution".
+
+=== Modularized solution
+
+The "improved solution" generates 4 screenshot files. This means, the test case scripts repeats the following code 4 times:
+
+[source]
+----
+WebUI.takeScreenshot('1-' + ContextTrace.escapedTestCaseIdChain() + '.png')
+----
+
+I want to make the code even simpler. I want to have a custom keyword that encapsulates the statements of calling `WebUI.takeScreenshot` and `ContextTrace.escapedTestCaseIdChain()`. So I make one more code set.
+
+- link:{URL_REPOSITORY}/blob/develop/app/Scripts/Main%20Test%20Cases/TC2_Verify%20Successful%20Appointment%20-%20modularized/Script1759068159344.groovy[app/Test Cases/Main Test Cases/TC2_Verify Successful Appointment - modularized]
+
+[source,groovy]
+----
+....
+include::../app/Scripts/Main Test Cases/TC2_Verify Successful Appointment - modularized/Script1759068159344.groovy[lines=15..17]
+....
+----
+
+The `my.Screenshooter` class is a short Groovy class, as follows:
+
+- link:{URL_REPOSITORY}/blob/master/app/Keywords/my/Screenshooter.groovy[my.Screenshooter]
+
+
+When I ran the link:https://github.com/kazurayam/TestContextTrace/blob/master/app/Test%20Suites/TS%20-%20modularized.ts[app/Test Suites/TS - modularized], I got the following output in the Console:
+
+[source]
+----
+include::20251004_213431.txt[]
+----
+
+This is the final result. I like it.
+
+=== Conclusion
+
+The `com.kazurayam.ks.ContextTrace` class enables Katalon Test Case scripts to get its own TestCaseId programatically. You can use value returned by `ContextTrace.escapedTestCaseIdChain()` as screenshot file name. You would be able to find more usecases of it.
+

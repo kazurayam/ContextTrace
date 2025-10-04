@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC2_Verify Successful Appointment - modularized</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>abeae249-7e8a-4715-9270-ad09d725d1da</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS,Chrome 141.0.7390.54,,,04-10-2025 20:42:10,04-10-2025 20:42:52,42.114s,PASSED
+,,,,,,,
+Start listener action : beforeTestSuite,Chrome 141.0.7390.54,,,04-10-2025 20:42:10,04-10-2025 20:42:10,0.060s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC2_Verify Successful Appointment,Chrome 141.0.7390.54,,,04-10-2025 20:42:11,04-10-2025 20:42:52,41.291s,PASSED
+Start listener action : beforeTestCase,Chrome 141.0.7390.54,,,04-10-2025 20:42:11,04-10-2025 20:42:11,0.108s,PASSED
+"comment(""Story: Book an appointment"")",Chrome 141.0.7390.54,,,04-10-2025 20:42:11,04-10-2025 20:42:12,0.115s,PASSED
+"comment(""Given that the user has logged into their account"")",Chrome 141.0.7390.54,,,04-10-2025 20:42:12,04-10-2025 20:42:12,0.006s,PASSED
+openBrowser(G_SiteURL),Chrome 141.0.7390.54,,,04-10-2025 20:42:12,04-10-2025 20:42:30,18.298s,PASSED
+takeScreenshot(),Chrome 141.0.7390.54,,,04-10-2025 20:42:30,04-10-2025 20:42:31,1.200s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":""John Doe"", ""Password"":""ThisIsNotAPassword""], STOP_ON_FAILURE)",Chrome 141.0.7390.54,,,04-10-2025 20:42:31,04-10-2025 20:42:40,8.676s,PASSED
+"comment(""And Appointment page is displayed"")",Chrome 141.0.7390.54,,,04-10-2025 20:42:40,04-10-2025 20:42:40,0.006s,PASSED
+if (true),Chrome 141.0.7390.54,,,04-10-2025 20:42:40,04-10-2025 20:42:46,5.917s,PASSED
+"comment(""When he fills in valid information in Appointment page"")",Chrome 141.0.7390.54,,,04-10-2025 20:42:46,04-10-2025 20:42:46,0.019s,PASSED
+takeScreenshot(),Chrome 141.0.7390.54,,,04-10-2025 20:42:46,04-10-2025 20:42:46,0.498s,PASSED
+"click(findTestObject(""Page_CuraAppointment/btn_BookAppointment""))",Chrome 141.0.7390.54,,,04-10-2025 20:42:46,04-10-2025 20:42:47,1.032s,PASSED
+"verifyElementPresent(findTestObject(""Page_AppointmentConfirmation/lbl_Facility""), 30)",Chrome 141.0.7390.54,,,04-10-2025 20:42:47,04-10-2025 20:42:48,0.663s,PASSED
+"verifyTextPresent(""Appointment Confirmation"", false)",Chrome 141.0.7390.54,,,04-10-2025 20:42:48,04-10-2025 20:42:49,0.780s,PASSED
+"comment(""Then he should be able to book a new appointment"")",Chrome 141.0.7390.54,,,04-10-2025 20:42:49,04-10-2025 20:42:49,0.007s,PASSED
+if (true),Chrome 141.0.7390.54,,,04-10-2025 20:42:49,04-10-2025 20:42:51,2.865s,PASSED
+takeScreenshot(),Chrome 141.0.7390.54,,,04-10-2025 20:42:51,04-10-2025 20:42:52,0.407s,PASSED
+closeBrowser(),Chrome 141.0.7390.54,,,04-10-2025 20:42:52,04-10-2025 20:42:52,0.198s,PASSED
