@@ -1,9 +1,9 @@
-# [Katalon Studio] ContextTrace
+# [Katalon Studio] ContextTrace --- Test Case script can get its own "TestCaseID"
 
 - date Oct 2025
 - by [kazurayam](https://forum.katalon.com/u/kazurayam/summary)
 
-In Katalon Studio, the `com.kazurayam.ks.ContextTree` class enables a Test Case script to get its own "Test Case ID" and other useful identifications programatically at runtime.
+I have developed a utility class `com.kazurayam.ks.ContextTrace` for Katalon Studio project, which enables a Test Case script to get its own "Test Case ID" and other useful identifications programatically at runtime.
 
 ## Prerequisites
 
@@ -95,7 +95,7 @@ When you run the `Test Cases/main/demo`, you will see the following messages in 
 . This reveals that Katalon Studio launched `Test Cases/main/demo`, which then called the `Test Cases/main/demo_sub` via `WebUI.callTestCase(...)` keword.
 2. The statement `ContextTrace.escapedTestCaseIdChain()` returned a string
 ```main-demo,main-demo_sub```
-. This string was derived from the Stack instance that `ContextTrace.getTestCaseIdStack()`.
+. This string was derived from the Stack instance that is returned by `ContextTrace.getTestCaseIdStack()`.
 3. Please note that the returned value `main-demo,main-demo_sub` was derived from the Test Case ID strings while slightly translated.
   - The leading prefix `Test Cases/` was chomped off
   - Forward slash character / was translated into a hypen -

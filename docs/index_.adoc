@@ -1,11 +1,11 @@
 :URL_REPOSITORY: https://github.com/kazurayam/ContextTrace
 :URL_PAGES: https://kazurayam.github.io/ContextTrace
 
-== [Katalon Studio] It is a good practice to name screenshot files with the Test Case ID
+== It is a good practice to name screenshot files with the Test Case ID
 
-Katalon Studio provides a built-in keyword link:https://docs.katalon.com/katalon-studio/keywords/keyword-description-in-katalon-studio/web-ui-keywords/webui-take-screenshot[`WebUI.takeScreenshot`]. This feature gives me an itchy problem to me. Let me describe the problem and what I have done.
+Katalon Studio provides a built-in keyword link:https://docs.katalon.com/katalon-studio/keywords/keyword-description-in-katalon-studio/web-ui-keywords/webui-take-screenshot[`WebUI.takeScreenshot`]. This feature brings an itchy problem to me. Let me describe the problem and what I have done.
 
-I have developed a Katalon project link:{URL_REPOSITORY}/tree/master/app[]. Let's go through this sample project, which will proposes a untility class `com.kazurayam.ks.ContextTrace`.
+I have developed a Katalon project link:{URL_REPOSITORY}/tree/master/app[]. Let's go through this sample project, which will propose a untility class `com.kazurayam.ks.ContextTrace`.
 
 === Original sample code
 
@@ -92,7 +92,7 @@ The "improved solution" generates 4 screenshot files. This means, the test case 
 WebUI.takeScreenshot('1-' + ContextTrace.escapedTestCaseIdChain() + '.png')
 ----
 
-I want to make the code even simpler. I want to have a custom keyword that encapsulates the statements of calling `WebUI.takeScreenshot` and `ContextTrace.escapedTestCaseIdChain()`. So I make one more code set.
+I want to make the code even simpler. I want to have a custom keyword that encapsulates the statements of calling `WebUI.takeScreenshot` and `ContextTrace.escapedTestCaseIdChain()`. So I made one more code set.
 
 - link:{URL_REPOSITORY}/blob/develop/app/Scripts/Main%20Test%20Cases/TC2_Verify%20Successful%20Appointment%20-%20modularized/Script1759068159344.groovy[app/Test Cases/Main Test Cases/TC2_Verify Successful Appointment - modularized]
 
