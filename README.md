@@ -50,10 +50,10 @@ class SetupContextTrace {
 This TestListener is essential for the `com.kazurayam.ks.ContextTrace` class to work properly.
 Katalon Studio fires the `beforeTestCase(TestCaseContext)` and `beforeTestSuite(TestSuiteContext)` methods in the TestListener, which pass the context objects to the `ContextTrace` object. The `ContextTrace` object will memorize the context objects so that user's TestCase scripts can referer to later when necessary.
 
-### write a Test Case that uses TestContextTrace
+### write a Test Case that uses ContextTrace
 
-Now you can use the `TestContextTrace` anywhere in your Test Case scripts. For example, see
-[Test Cases/main/demo](https://github.com/kazurayam/TestContextTrace/blob/master/lib/Scripts/main/demo/Script1759362677840.groovy) in the `app` project:
+Now you can use the `ContextTrace` anywhere in your Test Case scripts. For example, see
+[Test Cases/main/demo](https://github.com/kazurayam/ContextTrace/blob/master/lib/Scripts/main/demo/Script1759362677840.groovy) in the `app` project:
 
 ```
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -103,6 +103,7 @@ When you run the `Test Cases/main/demo`, you will see the following messages in 
   - A series of Test Cases chained by the `callTestCase()` keyword is converted into a flat string delimited by comma ,
 4. The string returned by `ContextTrace.escapedTestCaseIdChain()` is shorter and more compact than the original TestCaseIds.
 5. The string returned by `ContextTrace.escapedTestCaseIdChain()` is suitable for a file name, as it contains no special characters (`<>:"/\|?*`) which are prohibited as a part of file name in Windows.
+6. `ContextTrace.getTestSuiteId()` returns the Test Suite ID in which the current testcase belongs if the testcase was invoked by a wrapper Test Suite. If the testcase was executed directly without wrapping Test Suite, then `ContextTrace.getTestSuiteId()` will return null, `ContextTrace.escapedTestSuiteId()` will return an empty string "".
 
 ## API documentation
 
